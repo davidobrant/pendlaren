@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: aliceblue;
+    text-align: center;
+    padding: .2rem 1rem;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .1);
+    text-transform: uppercase;
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.search {
+    background: #fafafa;
+    width: 20vw;
+    padding: .4rem;
+}
+
+.search label {
+    font-size: .7rem;
+}
+
+.search input {
+    font-size: 1rem;
+    padding: .2rem;
+    width: 100%;
+    margin-bottom: .2rem;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .4rem;
+    margin-bottom: 2rem;
+}
+
+#position-button,
+#search-button {
+    padding: .4rem .8rem;
+}
+
+#search-button:hover,
+#search-button:focus {
+    background: lightgreen;
+    border: 2px solid mediumspringgreen;
+    border-radius: 3px;
+    outline: 1px solid mediumseagreen;
+}
+
+#position-button:hover, 
+#position-button:focus {
+    background: lightblue;
+    border: 2px solid skyblue;
+    border-radius: 3px;
+    outline: 1px solid mediumblue;
+}
+
+.results {
+    background: #fafafa;
+    width: 80vw;
+    padding: .4rem;
+}
+
+.nearbystops-list {
+    list-style: none;
+}
+
+.nearbystops-list li {
+    cursor: pointer;
+    margin: .2rem;
+    padding: .4rem;
+}
+
+.nearbystops-list li:hover {
+    background: aliceblue;
+}
+
+main #map {
+    max-width: 20vw;
+    height: 16vw;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+}
+
+.station {
+    font-size: .8rem;
+    padding: .2rem;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    text-align: start;
+    background: #ddd;
+    padding: .2rem;
+}
+
+.table-head-line {
+    text-align: start;
+    width: 20%;
+}
+
+table tr td {
+    padding: .2rem;
+}
+
+table tr:nth-child(odd) {
+    background: #eee;
+}
+
+.table-show-more {
+    margin-top: 1rem;
+}
+
+.table-show-more button {
+    padding: .2rem .6rem;
+    border-radius: 2px;
+    border: 1px solid #aaa;
+}
+
+.travel-from-options-list,
+.travel-to-options-list {
+    list-style: none;
+}
+
+.travel-from-options-list li,
+.travel-to-options-list li {
+    cursor: pointer;
+    margin-bottom: .4rem;
+    font-size: .8rem;
+}
+
+.travel-from-options-list li:hover,
+.travel-to-options-list li:hover {
+    background: aliceblue;
+}
+
+.trip ul {
+    list-style: none;
+}
+
+.trip ul span {
+    font-size: .7rem;
+}
+
+.trip ul ul {
+    font-size: 1rem;
+    padding: .2rem;
+}
+
+.trip ul ul:nth-child(odd) {
+    background-color: #eee;
+}
+
+
+/* ----- ProfilePicture ----- */
+
+.profile {
+    border-radius: 50%;
+    height: 3rem;
+    aspect-ratio: 1;
+    position: absolute;
+    top: .2rem;
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, .1);
+}
+
+.profile p {
+    position: absolute;
+    right: -3.6rem;
+    top: 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: blue;
+}
+
+.camera-container {
+    display: none;
+}

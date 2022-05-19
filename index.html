@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendlaren</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/search.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <header>
+        <h1>Pendlaren</h1>
+        <div class="profile" data-profile-picture-container>
+            <p data-take-picture-text>ta bild</p>
+        </div>
+    </header>
+    <main>
+        <div class="search">
+            <label for="travel-from">Från</label>
+            <input type="text" name="travel-from" class="travel-from" data-search-from>
+            <ul class="travel-from-options-list" data-travel-from-options></ul>
+            <label for="travel-to">Till</label>
+            <input type="text" name="travel-to" class="travel-to" data-search-to>
+            <ul class="travel-to-options-list" data-travel-to-options></ul>
+            <div class="search-buttons">
+                <button id="search-button" data-search-button>Sök</button>
+                <button id="position-button">Sök i området</button>
+            </div>
+            <div class="map" id="map"></div>
+        </div>
+        <div class="results">
+            <div class="camera-container" data-camera-container>
+                <video src="" id="camera" autoplay></video>
+                <canvas id="picture"></canvas>
+                <div class="camera-buttons">
+                    <button data-start-camera-button>Starta Kameran</button>
+                    <button data-take-picture-button>Ta en bild</button>
+                </div>
+            </div>
+            <div class="station" data-station>
+                <p data-station-text><span data-station-span></span></p>
+                <div data-chosen-station></div>
+            </div>
+            <ul class="nearbystops-list" data-nearbystops-list></ul>
+            <div class="travels">
+                <div data-table></div>
+                <div data-table-button class="table-show-more"></div>
+                <div class="departures">
+                    <ul data-departures></ul>
+                </div>
+                <div class="arrivals">
+                    <ul data-arrivals></ul>
+                </div>
+                <div class="trip">
+                    <ul data-trip-list></ul>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
